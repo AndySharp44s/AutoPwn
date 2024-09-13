@@ -9,6 +9,9 @@
 # AutoPwn
 This script is my first experience with bash. It is designed to generate an msf exploit for both Windows and Linux, scan the entire Wi-Fi network, detect the operating systems in use, infect them, and receive the connections, all in a fully automated manner. I learned bash the day before creating this script, so it's quite rudimentary, but it has worked for me in all cases. You are free to use it as you wish.
 
+## Customize it
+Remember to edit and customize everything according to your needs before executing it.
+
 ## Features
 
 - You can choose which IPs not to attack to ensure there is no unwanted damage.
@@ -30,6 +33,6 @@ Completely programmed by me. This is a self-learning project, so I researched a 
 
 ## Usage
 ```
-sudo apt update && sudo apt upgrade && sudo apt install git && git clone https://github.com/AndySharp44s/AutoPwn && cd AutoPwn && chmod 777 autopwn.sh && sudo ./autopwn.sh
+sudo apt update && sudo apt upgrade && sudo apt install mousepad && sudo apt install git && git clone https://github.com/AndySharp44s/AutoPwn && cd AutoPwn && chmod 777 autopwn.sh && mousepad autopwn.sh && sudo ./autopwn.sh
 ```
 #### I would greatly appreciate any help to improve it. I'm not very focused on it since I stopped using it months ago, so I haven't improved it even though I now have more knowledge of bash. However, if any bugs or ideas come up, I will implement them without any issues :3
