@@ -29,7 +29,7 @@ They should be installed automatically.
 Completely programmed by me. This is a self-learning project, so I researched a lot and learned a great deal during this project that took a couple of days.
 
 ## Usage
-```apt update
-sudo apt upgrade && sudo apt install git && git clone https://github.com/AndySharp44s/AutoPwn && cd AutoPwn && chmod 777 autopwn.sh && sudo ./autopwn.sh
+```
+apt update && sudo apt upgrade && sudo apt install git && git clone https://github.com/AndySharp44s/AutoPwn && cd AutoPwn && chmod 777 autopwn.sh && sudo ./autopwn.sh
 ```
 #### I would greatly appreciate any help to improve it. I'm not very focused on it since I stopped using it months ago, so I haven't improved it even though I now have more knowledge of bash. However, if any bugs or ideas come up, I will implement them without any issues :3
