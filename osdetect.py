@@ -20,7 +20,7 @@ def detect_os(ip):
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
-        print("Uso: python script.py <dirección_IP>")
+        print("Use: python script.py <dirección_IP>")
         sys.exit(1)
 
     ip_objetivo = sys.argv[1]
