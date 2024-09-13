@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [ "$EUID" -ne 0 ]; then
+  echo "This script must be run as root. Exiting."
+  exit 1
+fi
+
 version="1.0"
 
 # Variables
@@ -91,23 +96,10 @@ else
     dos2unix autopwn.sh > /dev/null 2>&1
     clear
     ./autopwn.sh
-    exit 1 >/dev/null 2>&1
-    exit >/dev/null 2>&1
-    kill $$ >/dev/null 2>&1
-    pkill $0 >/dev/null 2>&1
-    clear
-    sudo clear
-
-	if ! sudo -v >/dev/null 2>&1; then
-    		exit 1
-	fi
+    echo "Re-execute the script."
+    exit -1
 fi
-
-	sudo clear
-
-	if ! sudo -v >/dev/null 2>&1; then
-    		exit 1
-	fi
+    clear
 
 if ! test -d "AutoPWN"; then
 	sudo apt install sshpass
@@ -126,10 +118,9 @@ if ! test -f "AutoPWN/Bloody.flf"; then
 fi
 
 # Download os detect if it doesnt exists
-if ! test -f "AutoPWN/Bloody.flf"; then
+if ! test -f "osdetect.py"; then
     wget https://raw.githubusercontent.com/AndySharp44s/AutoPwn/main/osdetect.py -O osdetect.py
 fi
-
 
 clear
 
