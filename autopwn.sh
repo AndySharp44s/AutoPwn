@@ -5,11 +5,6 @@ if [ "$EUID" -ne 0 ]; then
   exit 1
 fi
 
-if [ -z "$SUDO_COMMAND" ] && [ "$SUDO_USER" != "" ]; then
-  echo -e "\e[31mThis script must be run after 'sudo su', not directly with 'sudo ./script.sh'. Exiting."
-  exit 1
-fi
-
 version="1.0"
 
 # Variables
@@ -130,7 +125,10 @@ fi
 clear
 
 # Presentación
-figlet "AutoPWN" -f AutoPWN/Bloody.flf | lolcat
+if ! figlet "AutoPWN" -f AutoPWN/Bloody.flf | lolcat; then
+  echo -e "\e[31mThis script must be run after 'sudo su', not directly with 'sudo ./script.sh'. Exiting."
+  exit 1
+fi
 echo -e "                         By Andermd (v$version)\n\n\n" | lolcat
 sleep 5
 
