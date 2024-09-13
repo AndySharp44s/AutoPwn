@@ -33,6 +33,6 @@ Completely programmed by me. This is a self-learning project, so I researched a 
 
 ## Usage
 ```
-sudo apt update && sudo apt upgrade && sudo apt install mousepad && sudo apt install git && git clone https://github.com/AndySharp44s/AutoPwn && cd AutoPwn && chmod 777 autopwn.sh && mousepad autopwn.sh && ./autopwn.sh
+sudo apt update && sudo apt upgrade && sudo apt install mousepad && sudo apt install git && git clone https://github.com/AndySharp44s/AutoPwn && cd AutoPwn && chmod 777 autopwn.sh && mousepad autopwn.sh && echo execute the script with ./autopwn.sh
 ```
 #### I would greatly appreciate any help to improve it. I'm not very focused on it since I stopped using it months ago, so I haven't improved it even though I now have more knowledge of bash. However, if any bugs or ideas come up, I will implement them without any issues :3
