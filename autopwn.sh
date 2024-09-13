@@ -5,6 +5,13 @@ if [ "$EUID" -ne 0 ]; then
   exit 1
 fi
 
+if ! echo "STARTING..." | lolcat; then
+  clear
+  echo -e "\e[31mThis script must be run after 'sudo su', not directly with 'sudo ./$0'. Exiting..."
+  exit 1
+fi
+clear
+
 version="1.0"
 
 # Variables
@@ -125,10 +132,7 @@ fi
 clear
 
 # Presentación
-if ! figlet "AutoPWN" -f AutoPWN/Bloody.flf | lolcat; then
-  echo -e "\e[31mThis script must be run after 'sudo su', not directly with 'sudo ./script.sh'. Exiting."
-  exit 1
-fi
+figlet "AutoPWN" -f AutoPWN/Bloody.flf | lolcat
 echo -e "                         By Andermd (v$version)\n\n\n" | lolcat
 sleep 5
 
