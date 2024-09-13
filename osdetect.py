@@ -12,9 +12,9 @@ def detect_os(ip):
                     return '\e[9;32mWINDOWS\e[9;38m'
                 elif 'linux' in os['name'].lower():
                     return '\e[9;32mLINUX\e[9;38m'
-            return '\e[9;31mSISTEMA OPERATIVO NO IDENTIFICADO\e[9;38m'
+            return '\e[9;31mOPERATING SYSTEM NOT IDENTIFIED\e[9;38m'
         else:
-            return '\e[9;31mSISTEMA OPERATIVO NO IDENTIFICADO\e[9;38m'
+            return '\e[9;31mOPERATING SYSTEM NOT IDENTIFIED\e[9;38m'
     except Exception as e:
         return str(e)
 
