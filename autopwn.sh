@@ -1,7 +1,12 @@
 #!/bin/bash
 
 if [ "$EUID" -ne 0 ]; then
-  echo -e "\e[31mThis script must be run as root. Exiting."
+  echo -e "\e[31mThis script must be run as root. Execute sudo su and then the script, Exiting..."
+  exit 1
+fi
+
+if [ -z "$SUDO_COMMAND" ] && [ "$SUDO_USER" != "" ]; then
+  echo -e "\e[31mThis script must be run after 'sudo su', not directly with 'sudo ./script.sh'. Exiting."
   exit 1
 fi
 
