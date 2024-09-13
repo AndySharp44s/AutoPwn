@@ -112,6 +112,7 @@ fi
 if ! test -d "AutoPWN"; then
 	sudo apt install sshpass
 	sudo apt install lolcat
+ 	sudo apt install gnome-terminal
 	sudo apt install figlet
 	sudo pip install python-nmap
 fi
