@@ -33,7 +33,7 @@ Completely programmed by me. This is a self-learning project, so I researched a 
 sudo apt upgrade
 sudo apt install git
 git clone https://github.com/AndySharp44s/AutoPwn
-cd AutoPwn-Master
+cd AutoPwn
 chmod 777 autopwn.sh
 sudo ./autopwn.sh
 ```
