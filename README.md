@@ -36,3 +36,5 @@ git clone https://github.com/AndySharp44s/AutoPwn
 cd AutoPwn-Master
 chmod 777 autopwn.sh
 ./autopwn.sh
+```
+#### I would greatly appreciate any help to improve it. I'm not very focused on it since I stopped using it months ago, so I haven't improved it even though I now have more knowledge of bash. However, if any bugs or ideas come up, I will implement them without any issues :3
