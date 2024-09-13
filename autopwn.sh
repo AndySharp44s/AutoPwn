@@ -7,7 +7,7 @@ fi
 
 if ! echo "STARTING..." | lolcat; then
   clear
-  echo -e "\e[31mThis script must be run after 'sudo su', not directly with 'sudo ./$0'. Exiting..."
+  echo -e "\e[31mThis script must be run after 'sudo su', not directly with 'sudo $0'. Exiting..."
   exit 1
 fi
 clear
