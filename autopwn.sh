@@ -102,8 +102,7 @@ else
     clear
     dos2unix autopwn.sh > /dev/null 2>&1
     clear
-    ./autopwn.sh
-    echo "Re-execute the script."
+    echo "Re-execute the script." | lolcat
     exit -1
 fi
     clear
