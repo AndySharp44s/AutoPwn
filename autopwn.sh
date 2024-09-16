@@ -18,8 +18,8 @@ duckip="$youripalways"
 
 iprange="${youripalways%.*}.0/24"
 
-winlport="7655"
-linlport="4576"
+winlport="8181"
+linlport="8080"
 
 rootpassword="kali"
 
