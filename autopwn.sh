@@ -112,6 +112,7 @@ if ! test -d "AutoPWN"; then
 	sudo apt install lolcat
  	sudo apt install gnome-terminal
 	sudo apt install figlet
+	sudo apt install nmap
 	sudo pip install python-nmap
 fi
 
