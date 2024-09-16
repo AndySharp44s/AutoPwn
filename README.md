@@ -25,7 +25,7 @@ Remember to edit and customize everything according to your needs before executi
 
 ## Dependencies
 
-They should be installed automatically. If you dont have metasploit and nmap installed you should install it. 
+They should be installed automatically. If you dont have metasploit installed you should install it. 
 
 ## Credits
 
