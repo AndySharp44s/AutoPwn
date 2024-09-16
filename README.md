@@ -25,13 +25,13 @@ Remember to edit and customize everything according to your needs before executi
 
 ## Dependencies
 
-They should be installed automatically.
+They should be installed automatically. If you dont have metasploit and nmap installed you should install it. 
 
 ## Credits
 
 Completely programmed by me. This is a self-learning project, so I researched a lot and learned a great deal during this project that took a couple of days.
 
-## Usage
+## Usage (Tested on Kali)
 ```
 sudo apt update && sudo apt upgrade && sudo apt install mousepad && sudo apt install git && sudo apt install lolcat && git clone https://github.com/AndySharp44s/AutoPwn && cd AutoPwn && chmod 777 autopwn.sh && mousepad autopwn.sh && clear && echo "execute the script with ./autopwn.sh" | lolcat && sudo su
 ```
